@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Authoritarian — Down With Distractions</title>
+  <meta name="description" content="A totalitarian productivity enforcer for Chrome. Pomodoro timer, site blacklisting, activity records, and a tamper-proof security lock. Down with distractions.">
+  <link rel="icon" href="../icons/icon128.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="static-rain" id="rain"></div>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="name">The Authoritarian</span>
+        <span class="sub">Down with distractions!</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#records">Records</a></li>
+        <li><a href="#lock">Security</a></li>
+        <li><a href="#install">Install</a></li>
+        <li class="nav-cta">
+          <a class="btn btn-primary" href="#install" style="font-size:15px;padding:7px 20px;">► Install</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-eyebrow">Productivity Enforcer for Chrome</div>
+            <h1>THE<br>AUTHOR&shy;ITARIAN</h1>
+            <div class="hero-sub">Down with distractions!</div>
+            <p class="hero-desc">
+              A Chrome extension that enforces your focus through Pomodoro sessions,
+              site blocking, and activity surveillance. Not a gentle reminder.
+              An order.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#install">► Download — Free</a>
+              <a class="btn btn-outline" href="#features">View Features</a>
+            </div>
+            <div class="hero-meta">
+              <div class="hero-stat">
+                <div class="val">Free</div>
+                <div class="lbl">Always</div>
+              </div>
+              <div class="hero-stat">
+                <div class="val">MV3</div>
+                <div class="lbl">Manifest</div>
+              </div>
+              <div class="hero-stat">
+                <div class="val">No</div>
+                <div class="lbl">Accounts</div>
+              </div>
+              <div class="hero-stat">
+                <div class="val">Local</div>
+                <div class="lbl">Storage Only</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extension popup mockup -->
+          <div class="mockup-wrap">
+            <div class="mockup-glow"></div>
+            <div class="mockup">
+              <div class="mockup-header">
+                <span class="title">THE AUTHORITARIAN</span>
+                <span class="lock">LOCK</span>
+              </div>
+              <div class="mockup-tabs">
+                <div class="mockup-tab active">Timer</div>
+                <div class="mockup-tab">Records</div>
+                <div class="mockup-tab">Blacklist</div>
+                <div class="mockup-tab">Whitelist</div>
+                <div class="mockup-tab">Settings</div>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-timer">
+                  <div class="time">23:46</div>
+                  <div class="mode">Focus Session</div>
+                  <div class="session">Session 2 of 4 · Total: 2</div>
+                </div>
+                <div class="mockup-terminate">■ Terminate</div>
+                <div class="mockup-break-panel">
+                  <div class="label">Request Early Break</div>
+                  <div class="mockup-break-btn">Request Break</div>
+                </div>
+                <div class="mockup-stats">
+                  <div class="mockup-stat"><div class="v">2</div><div class="l">Sessions</div></div>
+                  <div class="mockup-stat"><div class="v">27</div><div class="l">Focus Min</div></div>
+                  <div class="mockup-stat"><div class="v">0</div><div class="l">Break Min</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURES
+         ============================================================ -->
+    <section id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Classified Capabilities</div>
+          <h2 class="section-title">Full Enforcement Suite</h2>
+          <p class="section-sub">Every tool you need to keep your attention where it belongs.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <span class="feature-icon">⏱</span>
+            <div class="feature-code">[F-01] Core Engine</div>
+            <div class="feature-title">Pomodoro Timer</div>
+            <p class="feature-desc">
+              Structured focus sessions with short breaks and a long break after every cycle.
+              Fully configurable: work length, break length, sessions per cycle — all under your control.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">🚫</span>
+            <div class="feature-code">[F-02] Site Control</div>
+            <div class="feature-title">Blacklist & Block</div>
+            <p class="feature-desc">
+              Add any domain to the blacklist. Blacklisted sites are blocked during focus sessions
+              and can be held to a daily time limit. Blocked pages get a proper rejection notice.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">✅</span>
+            <div class="feature-code">[F-03] Exemptions</div>
+            <div class="feature-title">Whitelist</div>
+            <p class="feature-desc">
+              Exempt trusted domains — work tools, documentation, anything that should never
+              be auto-blocked. Your approved resources are never touched.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">📊</span>
+            <div class="feature-code">[F-04] Intelligence</div>
+            <div class="feature-title">Activity Records</div>
+            <p class="feature-desc">
+              Every domain you visit is timed and logged. The daily record shows exactly where
+              your hours go. Distractions thrive in the dark — this extension keeps the lights on.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">🤖</span>
+            <div class="feature-code">[F-05] Automation</div>
+            <div class="feature-title">Auto-Block</div>
+            <p class="feature-desc">
+              Set a daily time threshold. Once a domain exceeds it, it's automatically blacklisted
+              without requiring manual action. Enforcement that doesn't wait for you to notice.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">🔒</span>
+            <div class="feature-code">[F-06] Security</div>
+            <div class="feature-title">Settings Lock</div>
+            <p class="feature-desc">
+              Lock all settings, blacklists, and whitelists against modification. Unlocking requires
+              a written justification and a waiting period — making self-sabotage inconvenient
+              enough to think twice about.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">✋</span>
+            <div class="feature-code">[F-07] Accountability</div>
+            <div class="feature-title">Focus Check-Ins</div>
+            <p class="feature-desc">
+              The extension periodically checks in during sessions to verify you're actually working.
+              If you don't respond, the system assumes distraction and acts accordingly.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">☕</span>
+            <div class="feature-code">[F-08] Relief Valve</div>
+            <div class="feature-title">Break Controls</div>
+            <p class="feature-desc">
+              Request an early break with a stated reason. Extend breaks using a daily
+              bonus allowance. Strict — but not unreasonable.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon">⏳</span>
+            <div class="feature-code">[F-09] Limits</div>
+            <div class="feature-title">Visit Cooldown</div>
+            <p class="feature-desc">
+              Set per-visit time limits on blacklisted domains. When the limit is reached,
+              the site is blocked for a cooldown period before access is restored.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS
+         ============================================================ -->
+    <section id="how-it-works" style="background: var(--bg-inset);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Operational Procedure</div>
+          <h2 class="section-title">Deploy In Four Steps</h2>
+          <p class="section-sub">Up and running within minutes of installation.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-title">Install</div>
+            <p class="step-desc">
+              Add the extension from the Chrome Web Store. No account required.
+              All data stays on your machine.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-title">Blacklist</div>
+            <p class="step-desc">
+              Add your distraction sites. Set daily limits and per-visit cooldowns.
+              You already know which sites need supervision.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-title">Work</div>
+            <p class="step-desc">
+              Start a Pomodoro session. Blocked sites stay blocked.
+              Check-ins keep you honest. The timer keeps you moving.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-title">Lock</div>
+            <p class="step-desc">
+              When willpower needs backup, lock your settings.
+              Undoing requires a written reason and a waiting period.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RECORDS
+         ============================================================ -->
+    <section id="records">
+      <div class="container">
+        <div class="records-demo">
+          <div class="records-panel">
+            <div class="records-panel-header">Daily Activity Record — 2026-03-27</div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">www.youtube.com</span>
+                <span class="record-time">46.8m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill top" style="width:100%"></div></div>
+            </div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">mail.google.com</span>
+                <span class="record-time">26.0m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill high" style="width:55%"></div></div>
+            </div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">twitter.com</span>
+                <span class="record-time">18.4m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill mid" style="width:39%"></div></div>
+            </div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">reddit.com</span>
+                <span class="record-time">11.3m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill mid" style="width:24%"></div></div>
+            </div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">news.ycombinator.com</span>
+                <span class="record-time">9.8m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill low" style="width:21%"></div></div>
+            </div>
+            <div class="record-row">
+              <div class="record-row-top">
+                <span class="record-domain">docs.google.com</span>
+                <span class="record-time">6.3m</span>
+              </div>
+              <div class="record-bar"><div class="record-fill low" style="width:14%"></div></div>
+            </div>
+          </div>
+
+          <div class="records-copy">
+            <div class="section-eyebrow" style="text-align:left;margin-bottom:14px;">Intelligence Report</div>
+            <h3>Where Your Time<br>Actually Goes</h3>
+            <p>
+              Every domain you visit is tracked from the moment you land on it.
+              The Records tab gives you a ranked daily breakdown — no guessing,
+              no rounding, no excuses.
+            </p>
+            <ul>
+              <li>Time logged per domain, updated in real time</li>
+              <li>Ranked by minutes spent — biggest offenders at the top</li>
+              <li>Visual progress bars for instant pattern recognition</li>
+              <li>Auto-blacklist triggers when thresholds are crossed</li>
+              <li>History clears at midnight — every day is a fresh dossier</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECURITY LOCK
+         ============================================================ -->
+    <section id="lock" style="background: var(--bg-inset);">
+      <div class="container">
+        <div class="lock-showcase">
+          <div class="lock-copy">
+            <div class="section-eyebrow" style="text-align:left;margin-bottom:14px;">Maximum Enforcement</div>
+            <h3>The Security Lock</h3>
+            <p>
+              Sometimes willpower alone isn't enough. The Security Lock puts
+              your settings under lock — no changes until you've submitted a written
+              justification and waited out the cooldown.
+            </p>
+            <ul class="lock-feature-list">
+              <li>
+                <span>[!]</span>
+                <span>Locks all settings, blacklist entries, and whitelist entries against modification</span>
+              </li>
+              <li>
+                <span>[!]</span>
+                <span>Unlock requires a written reason — makes impulsive changes harder</span>
+              </li>
+              <li>
+                <span>[!]</span>
+                <span>Unlock request opens a dedicated review page before access is granted</span>
+              </li>
+              <li>
+                <span>[!]</span>
+                <span>Useful before high-stakes work sessions, exams, or deadlines</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lock-panel">
+            <div class="lock-panel-title">Security Lock</div>
+            <p class="lock-panel-desc">
+              Lock all settings, blacklist, and whitelist from modification.
+              To unlock, a written justification and waiting period are required.
+            </p>
+            <div class="lock-status-row">Status: Unlocked</div>
+            <div class="lock-btns">
+              <div class="lock-btn-demo deny">Lock All</div>
+              <div class="lock-btn-demo amber">Request Unlock</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INSTALL
+         ============================================================ -->
+    <section id="install">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Direct Download</div>
+          <h2 class="section-title">Install The Authoritarian</h2>
+          <p class="section-sub">Not on the Chrome Web Store yet. Install manually — it takes under two minutes.</p>
+        </div>
+
+        <div style="text-align:center; margin-bottom:56px;">
+          <a class="btn btn-primary" href="the-authoritarian.zip" download style="font-size:22px;padding:13px 40px;">⬇ Download Extension</a>
+          <div class="cta-note" style="margin-top:14px;">Free · No account · Works on Chrome, Brave, Edge, and other Chromium browsers</div>
+        </div>
+
+        <div class="section-header" style="margin-bottom:36px;">
+          <div class="section-eyebrow">Sideloading Guide</div>
+          <h3 style="font-size:26px;letter-spacing:2px;color:var(--text-white);text-transform:uppercase;">Four Steps to Deploy</h3>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-title">Extract</div>
+            <p class="step-desc">Unzip the downloaded file to a permanent folder. Chrome needs the folder to stay in place — don't move or delete it after installing.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-title">Extensions Page</div>
+            <p class="step-desc">Open Chrome and navigate to <span style="font-family:var(--font-mono);color:var(--green-bright);font-size:12px;">chrome://extensions</span> in the address bar.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-title">Developer Mode</div>
+            <p class="step-desc">Toggle <strong style="color:var(--text-bright)">Developer mode</strong> on using the switch in the top-right corner of the extensions page.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-title">Load Unpacked</div>
+            <p class="step-desc">Click <strong style="color:var(--text-bright)">Load unpacked</strong> and select the folder you extracted in step 1. Done.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:48px;padding:20px 24px;border-color:var(--border-green);">
+          <p style="font-size:13px;font-family:var(--font-mono);color:var(--text-dim);line-height:1.7;letter-spacing:0.3px;">
+            <span style="color:var(--amber)">[!]</span>&nbsp;
+            Chrome will show a "developer mode extensions" warning banner — this is normal and harmless. It may also prompt you to disable developer mode extensions on startup; dismiss it and continue. The extension will be submitted to the Chrome Web Store in due course.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUOTE
+         ============================================================ -->
+    <div class="quote-section">
+      <div class="container">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">
+          Wasting time is the greatest sin a human being can commit against himself.
+        </p>
+        <div class="quote-source">— Unknown</div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         CTA
+         ============================================================ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="section-eyebrow" style="margin-bottom:14px;">Ready to Comply?</div>
+        <h2>Install The Authoritarian</h2>
+        <p>
+          Free. No accounts. No telemetry. All data stays in your browser's local storage.
+          Its only goal is your productivity.
+        </p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#install" style="font-size:22px;padding:12px 36px;">⬇ Download &amp; Install</a>
+        </div>
+        <div class="cta-note">Scroll up to the install guide for step-by-step sideloading instructions.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">The Authoritarian v1</div>
+      <ul class="footer-links">
+        <li><a href="the-authoritarian.zip" download>Download</a></li>
+        <li><a href="uninstall.html">Removal Notice</a></li>
+      </ul>
+      <div class="footer-copy">Down with distractions.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Falling green lines background effect
+    const rain = document.getElementById('rain');
+    for (let i = 0; i < 50; i++) {
+      const line = document.createElement('div');
+      line.className = 'rain-line';
+      line.style.left              = Math.random() * 100 + '%';
+      line.style.height            = (Math.random() * 40 + 20) + 'px';
+      line.style.animationDuration = (Math.random() * 4 + 3) + 's';
+      line.style.animationDelay    = Math.random() * 6 + 's';
+      line.style.opacity           = (Math.random() * 0.3 + 0.05).toString();
+      rain.appendChild(line);
+    }
+  </script>
+</body>
+</html>
