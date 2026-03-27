@@ -1,1 +1,0 @@
-# getauthoritarian.github.io
