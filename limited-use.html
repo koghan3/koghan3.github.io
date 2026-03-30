@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limited Use Policy — The Authoritarian</title>
+  <meta name="description" content="Limited Use Policy for The Authoritarian Chrome extension, affirming compliance with Chrome Web Store data use requirements.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .doc-page {
+      max-width: 760px;
+      margin: 80px auto 80px;
+      padding: 0 24px;
+    }
+    .doc-header {
+      background: var(--bg-card);
+      background-image: var(--dither);
+      border: 1px solid var(--border-green);
+      border-bottom: none;
+      padding: 10px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .doc-header-brand { font-size: 12px; color: var(--text-dim); letter-spacing: 3px; font-family: var(--font-mono); }
+    .doc-header-ref   { font-size: 11px; color: var(--text-faint); font-family: var(--font-mono); }
+    .doc-body {
+      background: var(--bg-card);
+      background-image: var(--dither);
+      border: 1px solid var(--border);
+      padding: 48px 52px;
+    }
+    .doc-title { font-size: 36px; color: var(--amber); margin-bottom: 4px; }
+    .doc-subtitle { font-size: 13px; color: var(--text-dim); letter-spacing: 2px; font-family: var(--font-mono); margin-bottom: 8px; text-transform: uppercase; }
+    .doc-date { font-size: 12px; color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 40px; }
+
+    .affirmation-block {
+      background: var(--bg-inset);
+      border: 1px solid var(--green);
+      padding: 24px 28px;
+      margin-bottom: 36px;
+    }
+    .affirmation-block .label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--green-bright);
+      font-family: var(--font-mono);
+      margin-bottom: 12px;
+    }
+    .affirmation-block p {
+      font-size: 15px;
+      color: var(--text-bright);
+      line-height: 1.8;
+      font-family: var(--font-mono);
+    }
+
+    .policy-section { margin-bottom: 36px; }
+    .policy-section h2 {
+      font-size: 14px;
+      color: var(--text-bright);
+      letter-spacing: 3px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      font-family: var(--font-mono);
+    }
+    .policy-section p, .policy-section li {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.8;
+      font-family: var(--font-mono);
+    }
+    .policy-section ul { margin: 8px 0 0 16px; }
+    .policy-section li { margin-bottom: 6px; }
+    .policy-section strong { color: var(--text-bright); }
+
+    .rule-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .rule-row:last-child { border-bottom: none; }
+    .rule-status {
+      flex-shrink: 0;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      letter-spacing: 1px;
+      padding: 3px 8px;
+      border: 1px solid;
+    }
+    .rule-status.comply { color: var(--green-bright); border-color: var(--green); background: var(--green-dim); }
+    .rule-text { font-size: 13px; font-family: var(--font-mono); color: var(--text); line-height: 1.7; }
+    .rule-text strong { color: var(--text-bright); }
+
+    .doc-footer {
+      background: var(--bg-inset);
+      border: 1px solid var(--border);
+      border-top: none;
+      padding: 8px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .doc-footer span { font-size: 11px; color: var(--text-faint); font-family: var(--font-mono); }
+    .doc-footer a { font-size: 11px; color: var(--green-bright); font-family: var(--font-mono); }
+
+    @media (max-width: 600px) {
+      .doc-body { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="name">The Authoritarian</span>
+        <span class="sub">Down with distractions!</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#install">Install</a></li>
+        <li class="nav-cta">
+          <a class="btn btn-primary" href="index.html#install" style="font-size:15px;padding:7px 20px;">► Install</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="doc-page">
+      <div class="doc-header">
+        <span class="doc-header-brand">MINISTRY OF PRODUCTIVITY — OFFICIAL DOCUMENT</span>
+        <span class="doc-header-ref">FORM LU-01</span>
+      </div>
+
+      <div class="doc-body">
+        <h1 class="doc-title">LIMITED USE POLICY</h1>
+        <div class="doc-subtitle">The Authoritarian — Chrome Extension</div>
+        <div class="doc-date">Effective date: 2026-04-01 &nbsp;·&nbsp; Last updated: 2026-04-01</div>
+
+        <div class="affirmation-block">
+          <div class="label">AFFIRMATIVE STATEMENT — LIMITED USE COMPLIANCE</div>
+          <p>
+            The Authoritarian's use of data obtained from Chrome APIs — including browsing activity — adheres strictly to the
+            <strong>Chrome Web Store User Data Policy</strong> and its Limited Use requirements.
+            Data is used only to provide and improve the extension's core productivity features.
+            It is not transferred, sold, or used for any secondary purpose, including advertising or user profiling.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>What the Limited Use Rules Require</h2>
+          <p>The Chrome Web Store Limited Use Policy prohibits extensions from using user data in ways beyond what is necessary to provide the core product. Specifically, data may not be:</p>
+          <ul>
+            <li>Transferred to third parties (except as necessary to provide the product, or with explicit user consent)</li>
+            <li>Used or transferred for purposes unrelated to the extension's core functionality</li>
+            <li>Used or transferred for advertising purposes</li>
+            <li>Used or transferred to determine creditworthiness or for lending purposes</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>How The Authoritarian Complies</h2>
+
+          <div class="rule-row">
+            <span class="rule-status comply">COMPLY</span>
+            <div class="rule-text">
+              <strong>No data is transferred to any third party.</strong> All data generated by the extension — browsing activity, settings, session stats — is stored exclusively in Chrome's local storage on your device. No data is sent to any external server, database, or service.
+            </div>
+          </div>
+
+          <div class="rule-row">
+            <span class="rule-status comply">COMPLY</span>
+            <div class="rule-text">
+              <strong>Data is used only for core functionality.</strong> Website visit time is used solely to enforce your configured daily limits and display usage records. It is not cross-referenced, aggregated across users, or used for any secondary purpose.
+            </div>
+          </div>
+
+          <div class="rule-row">
+            <span class="rule-status comply">COMPLY</span>
+            <div class="rule-text">
+              <strong>No advertising use.</strong> The extension contains no advertising networks, tracking pixels, or analytics libraries. No user data is used to serve, target, or measure advertising.
+            </div>
+          </div>
+
+          <div class="rule-row">
+            <span class="rule-status comply">COMPLY</span>
+            <div class="rule-text">
+              <strong>No profiling or creditworthiness use.</strong> User data is never used to build behavioural profiles, assess creditworthiness, or support any financial determination.
+            </div>
+          </div>
+
+          <div class="rule-row">
+            <span class="rule-status comply">COMPLY</span>
+            <div class="rule-text">
+              <strong>Human-readable access only.</strong> Browsing activity data is only accessible to the user themselves, displayed in the extension's Records tab. It is never read programmatically by any party other than the extension's own code running locally on your device.
+            </div>
+          </div>
+        </div>
+
+        <div class="policy-section">
+          <h2>Scope of Data Access</h2>
+          <p>The extension reads the <strong>hostname</strong> of your active browser tab (e.g. "youtube.com") every 15 seconds to accumulate a time total for that domain. Full URLs, search queries, page content, form data, and cookies are never read, stored, or transmitted. The extension has no capability to do so.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Questions</h2>
+          <p>If you have questions about data use or this policy, contact the developer through the Chrome Web Store listing page.</p>
+        </div>
+      </div>
+
+      <div class="doc-footer">
+        <span>THE AUTHORITARIAN 1.0.0</span>
+        <a href="privacy-policy.html">← Privacy Policy</a>
+        <span>CHROME WEB STORE LIMITED USE — COMPLIANT</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">The Authoritarian 1.0.0</div>
+      <ul class="footer-links">
+        <li><a href="index.html#install">Download</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="limited-use.html">Limited Use</a></li>
+        <li><a href="uninstall.html">Removal Notice</a></li>
+      </ul>
+      <div class="footer-copy">Down with distractions.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

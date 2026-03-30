@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Authoritarian — Don't Go</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    /* Static noise overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: var(--dither);
+      background-size: 4px 4px;
+      opacity: 3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Falling lines animation */
+    .static-rain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .rain-line {
+      position: absolute;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(74,98,48,0.2), transparent);
+      animation: rain-fall linear infinite;
+    }
+    @keyframes rain-fall {
+      0%   { transform: translateY(-100vh); }
+      100% { transform: translateY(100vh); }
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: 90%;
+      max-width: 640px;
+    }
+
+    .ministry-header {
+      background: var(--red);
+      border: 2px solid var(--red-bright);
+      border-bottom: none;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ministry-name { font-size: 14px; color: #e0b0b0; letter-spacing: 2px; font-family: var(--font-mono); }
+    .doc-id { font-size: 11px; color: rgba(255,200,200,0.6); font-family: var(--font-mono); }
+
+    .doc-card {
+      background: var(--bg-card);
+      background-image: var(--dither);
+      border: 2px solid var(--red-bright);
+      padding: 40px 48px;
+      text-align: center;
+    }
+
+    h1 { font-size: 34px; color: var(--stamp); margin-bottom: 6px; }
+    h2 { font-size: 15px; color: var(--text-dim); font-weight: normal; letter-spacing: 2px; margin-bottom: 28px; font-family: var(--font-mono); }
+
+    .loss-items { text-align: left; margin-bottom: 28px; }
+    .loss-item {
+      padding: 14px 18px;
+      background: var(--bg-inset);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      margin-bottom: 6px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .loss-item-code {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      letter-spacing: 1px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      min-width: 40px;
+    }
+    .loss-item-content h3 {
+      font-size: 18px;
+      color: var(--text-bright);
+      margin-bottom: 4px;
+    }
+    .loss-item-content p {
+      font-size: 13px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+
+    .plea-quote {
+      border: 1px solid var(--border-red);
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      background: rgba(122,16,16,0.08);
+    }
+    .plea-quote p {
+      font-size: 16px;
+      color: var(--text-dim);
+      font-style: italic;
+      line-height: 1.7;
+    }
+    .plea-quote strong { color: var(--text); }
+
+    .footer-note {
+      font-size: 12px;
+      color: var(--text-faint);
+      font-family: var(--font-mono);
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+    }
+
+    .doc-footer {
+      background: var(--red);
+      border: 2px solid var(--red-bright);
+      border-top: none;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .doc-footer span { font-size: 12px; color: #e0b0b0; font-family: var(--font-mono); letter-spacing: 2px; }
+  </style>
+</head>
+<body>
+  <div class="static-rain" id="rain"></div>
+
+  <div class="page">
+    <div class="ministry-header">
+      <span class="ministry-name">THE AUTHORITARIAN — URGENT DISPATCH</span>
+      <span class="doc-id">FORM R-1: REMOVAL NOTICE</span>
+    </div>
+
+    <div class="doc-card">
+      <h1>NOTICE OF REMOVAL</h1>
+      <h2>The Authoritarian has detected an uninstall attempt</h2>
+
+      <div class="loss-items">
+        <div class="loss-item">
+          <span class="loss-item-code">[01]</span>
+          <div class="loss-item-content">
+            <h3>Focus Sessions</h3>
+            <p>The Pomodoro engine structures your work into productive intervals. Without enforcement, distractions operate without consequence.</p>
+          </div>
+        </div>
+        <div class="loss-item">
+          <span class="loss-item-code">[02]</span>
+          <div class="loss-item-content">
+            <h3>Browsing Restrictions</h3>
+            <p>Blacklisted domains are held to daily limits and suspended during work sessions. Removal grants unlimited, unsupervised access.</p>
+          </div>
+        </div>
+        <div class="loss-item">
+          <span class="loss-item-code">[03]</span>
+          <div class="loss-item-content">
+            <h3>Time Intelligence</h3>
+            <p>Daily records expose where your hours truly go. Without this data, you operate blind — and distractions thrive in the dark.</p>
+          </div>
+        </div>
+        <div class="loss-item">
+          <span class="loss-item-code">[04]</span>
+          <div class="loss-item-content">
+            <h3>Discipline Infrastructure</h3>
+            <p>You installed The Authoritarian to enforce standards you already believe in. That conviction has not expired.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="plea-quote">
+        <p>"Wasting time is the greatest sin a human being can commit against himself."<br>
+        <strong>— You chose discipline. The Authoritarian is simply holding you to it.</strong></p>
+      </div>
+
+      <p class="footer-note">
+        If already uninstalled: reload the extension folder from your file system.<br>
+        Your blacklist, whitelist, and tracking records may still be recoverable from local storage.
+      </p>
+    </div>
+
+    <div class="doc-footer">
+      <span>THE AUTHORITARIAN v1</span>
+    </div>
+  </div>
+
+  <script src="plea.js"></script>
+</body>
+</html>
